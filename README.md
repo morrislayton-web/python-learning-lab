@@ -35,7 +35,7 @@ I am currently completing engineering credits at leading Swedish universities to
 ---
 
 ## 👤 About Me
-I bring a "Systems-First" mindset from my experience at **Beijer Byggmaterial** and technical support roles at **IBM facilities**. My goal is to develop software that optimizes the intersection of physical logistics and digital data.
+I bring a "Systems-First" mindset from my experience and technical support roles at **IBM facilities**. My goal is to develop software that optimizes the intersection of physical logistics and digital data.
 
 📫 **Email:** [morrislayton@gmail.com](mailto:morrislayton@gmail.com)  
 📍 **Location:** Stockholm, Sweden
