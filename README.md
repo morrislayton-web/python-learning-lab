@@ -1,28 +1,43 @@
-Project Documentation
 # 🚀 Python Learning Lab: Logistics & Logic
+**Bridging 8 Years of Industrial Operations with Software Engineering**
 
-Welcome to my professional Python journey. This repository contains a collection of scripts designed to solve real-world problems, ranging from inventory management to financial simulations.
-
-## 📌 Table of Contents
-
-### 🏗️ [Logistics & Inventory](./logistics/)
-* **[Inventory Audit Tool](./inventory_audit_tool.py):** My flagship script. Detects overstocking glitches and calculates tied-up capital in SEK.
-* **[Stock Check](./logistics/stock_check.py):** Basic dictionary implementation for warehouse tracking.
-
-### 💰 [Financial Systems](./banking/)
-* **[ATM Simulation](./banking/atm_simulation.py):** Logic-based banking system handling deposits, withdrawals, and balance validation.
-
-### 👤 [Identity & Data](./identity/)
-* **[User Signup](./identity/user_signup.py):** Data sanitization tool that formats and validates user input for database entry.
+Welcome to my technical repository. This lab documents my transition from warehouse systems management into **Software Development**, featuring projects that combine industrial precision with academic rigor.
 
 ---
 
-## 🛠️ Skills Demonstrated
-* **Data Structures:** Using Dictionaries for inventory and Lists for batch processing.
-* **Financial Logic:** Calculating losses and auditing invoices.
-* **Error Handling:** Using `try/except` to prevent system crashes during user input.
-* **File I/O:** Automatically generating `.txt` audit reports for management.
+## 🏛️ Academic Foundations
+I am currently completing engineering credits at leading Swedish universities to build a robust programming foundation:
+* **Luleå University of Technology (LTU):** *Computer Programming (D0043E)* — Focused on structured programming and PEP 8 compliance.
+* **Linköping University (LiU):** *Elements of AI (ETE318)* — Completed (2.0 HP).
+* **Uppsala University (UU):** *Sustainable Development & CSR (1TG242)* — Active.
 
 ---
-*Connect with me as I build tools for the future of logistics and engineering!*
+
+## 🏗️ Featured Projects
+
+### [Logistics & Inventory Audit Tool](./logistics)
+* **Problem:** Inefficient tracking of tied-up capital in warehouse operations.
+* **Solution:** A Python script that detects overstocking glitches and calculates financial impact in SEK.
+* **Technical Skills:** Dictionary-based data structures, batch processing, and automated reporting.
+
+### [Financial Logic Simulation](./banking)
+* **Problem:** Simulating secure transaction flows.
+* **Solution:** An ATM logic system handling multi-step validation and balance synchronization.
+* **Technical Skills:** Conditional logic, error handling (`try/except`), and input sanitization.
+
+---
+
+## 🛠️ Engineering Standards
+* **Readability:** All scripts are authored following **PEP 8 guidelines** for professional-grade maintainability.
+* **Robustness:** Implemented custom exception handling to manage `ValueError` and `MemoryError` scenarios.
+* **Tools:** Developed primarily in **VS Code** with **Git** for version control.
+
+---
+
+## 👤 About Me
+I bring a "Systems-First" mindset from my experience at **Beijer Byggmaterial** and technical support roles at **IBM facilities**. My goal is to develop software that optimizes the intersection of physical logistics and digital data.
+
+📫 **Email:** [morrislayton@gmail.com](mailto:morrislayton@gmail.com)  
+📍 **Location:** Stockholm, Sweden
+
 
