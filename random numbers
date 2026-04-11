@@ -1,0 +1,90 @@
+"""
+Assignment 3F: Random Number Processor.
+This module generates, sorts, and displays random integers.
+"""
+import random
+
+
+def bubble_sort(arr, ascending=True):
+    """
+    Manual Bubble Sort implementation.
+    Sorts the list in-place using a temporary variable for swaps.
+    """
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if ascending:
+                if arr[j] > arr[j + 1]:
+                    temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+            else:
+                if arr[j] < arr[j + 1]:
+                    temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                    
+
+def main():
+    """Main execution block for generating and sorting random numbers."""
+    min_val = 0
+    max_val = 999
+    invalid_msg = "Invalid Input"
+
+    try:
+        prompt = f"How many random numbers in range {min_val} to {max_val}? "
+        user_input = input(prompt)
+        count = int(user_input)
+        if count < 1:
+            raise ValueError
+    except ValueError:
+        print(invalid_msg)
+        return
+
+    try:
+        numbers = []
+        while len(numbers) < count:
+            num = random.randint(min_val, max_val)
+            numbers.append(num)
+    except MemoryError:
+        print("Impossible to handle the requested amount on this system.")
+        return
+
+    print("\nHere are the random numbers:")
+    for i in range(len(numbers)):
+        print(numbers[i], end=' ' if i < len(numbers) - 1 else "")
+    print("\n")
+
+    evens = []
+    odds = []
+    for val in numbers:
+        if val % 2 == 0:
+            evens.append(val)
+        else:
+            odds.append(val)
+
+    bubble_sort(evens, ascending=True)
+    bubble_sort(odds, ascending=False)
+
+    print("Here are the random numbers arranged:")
+
+    if not evens:
+        print("No Even Numbers", end="")
+    else:
+        for i in range(len(evens)):
+            print(evens[i], end=' ' if i < len(evens) - 1 else "")
+
+    print(" - ", end="")
+
+    if not odds:
+        print("No Odd Numbers")
+    else:
+        for i in range(len(odds)):
+            print(odds[i], end=' ' if i < len(odds) - 1 else "")
+        print()
+
+    print(f"\nOf the above {count} numbers, {len(evens)} even and {len(odds)} odd")
+
+
+if __name__ == "__main__":
+    main()
